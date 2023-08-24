@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-app-multi-components-repo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/hacdev/yola378p-tenant/multi-components-repo/nodejs-app-multi-components-repo@sha256:5632297b193ed0dee0c89c0ac7663683ec5c44d5a2c8b836c7451ffe87d2fb7a
+        name: my-nodejs
+        resources: {}
+status: {}
